@@ -12,6 +12,8 @@ capture = CvCapture.open
 window = GUI::Window.new("qr test")
 
 # capture and display image, decode and write result
+puts "Press enter to capture"
+readline
 image = capture.query
 image.save('test.jpg')
 window.show(image)
